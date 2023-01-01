@@ -7,6 +7,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Outfit-Bold.ttf">
+            <string>Outfit-Bold</string>
+        </array>
+        <array key="Outfit-Regular.ttf">
+            <string>Outfit-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Detail View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -15,16 +23,107 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CpU-e5-DuW">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jo-ch-8oV">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="900"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mock" translatesAutoresizingMaskIntoConstraints="NO" id="SHC-fc-tUY">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="350"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="350" id="qZP-p5-amS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HUYA: Wait For Further Developments; Stock Hold (NYSE:HUYA)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-en-sT9">
+                                                <rect key="frame" x="20" y="365" width="348" height="140"/>
+                                                <fontDescription key="fontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="35"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01/01/23 - 13:18" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQf-lw-Ipt">
+                                                <rect key="frame" x="271" y="292" width="102" height="19"/>
+                                                <fontDescription key="fontDescription" name="Outfit-Regular" family="Outfit" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="marketaux.com" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEN-d3-3L5">
+                                                <rect key="frame" x="25" y="316" width="348" height="19"/>
+                                                <fontDescription key="fontDescription" name="Outfit-Bold" family="Outfit" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1r-7x-fMM">
+                                                <rect key="frame" x="333" y="74" width="35" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="cJM-K0-J9G"/>
+                                                    <constraint firstAttribute="height" constant="50" id="mzH-Yu-WV5"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="square.and.arrow.up" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="black"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tv7-SR-hYs">
+                                                <rect key="frame" x="25" y="530" width="343" height="100"/>
+                                                <string key="text">HUYA is innovating and growing in the number of active users, but there are many headwinds. Read more to see the risks and why I rate HUYA stock a hold now.</string>
+                                                <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="rEN-d3-3L5" firstAttribute="top" secondItem="HQf-lw-Ipt" secondAttribute="bottom" constant="5" id="03L-vY-typ"/>
+                                            <constraint firstAttribute="trailing" secondItem="SHC-fc-tUY" secondAttribute="trailing" id="BQE-M0-ii0"/>
+                                            <constraint firstItem="hnV-en-sT9" firstAttribute="leading" secondItem="2Jo-ch-8oV" secondAttribute="leading" constant="20" id="Bi5-0A-tWh"/>
+                                            <constraint firstAttribute="trailing" secondItem="V1r-7x-fMM" secondAttribute="trailing" constant="25" id="CZW-sM-qnV"/>
+                                            <constraint firstItem="rEN-d3-3L5" firstAttribute="leading" secondItem="2Jo-ch-8oV" secondAttribute="leading" constant="25" id="I0b-QF-QkD"/>
+                                            <constraint firstItem="Tv7-SR-hYs" firstAttribute="top" secondItem="hnV-en-sT9" secondAttribute="bottom" constant="25" id="UbP-QR-eJi"/>
+                                            <constraint firstAttribute="trailing" secondItem="rEN-d3-3L5" secondAttribute="trailing" constant="20" id="XKr-Ib-y5t"/>
+                                            <constraint firstAttribute="trailing" secondItem="hnV-en-sT9" secondAttribute="trailing" constant="25" id="asy-Mo-e49"/>
+                                            <constraint firstAttribute="trailing" secondItem="HQf-lw-Ipt" secondAttribute="trailing" constant="20" id="d4v-Wa-ZuX"/>
+                                            <constraint firstItem="SHC-fc-tUY" firstAttribute="leading" secondItem="2Jo-ch-8oV" secondAttribute="leading" id="eDY-de-0UO"/>
+                                            <constraint firstItem="SHC-fc-tUY" firstAttribute="top" secondItem="2Jo-ch-8oV" secondAttribute="top" id="f2Y-Ie-YY7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Tv7-SR-hYs" secondAttribute="trailing" constant="25" id="g7x-um-Kxs"/>
+                                            <constraint firstAttribute="height" constant="900" id="h5j-Vn-GOf"/>
+                                            <constraint firstItem="Tv7-SR-hYs" firstAttribute="leading" secondItem="2Jo-ch-8oV" secondAttribute="leading" constant="25" id="p3d-VU-okJ"/>
+                                            <constraint firstItem="SHC-fc-tUY" firstAttribute="bottom" secondItem="rEN-d3-3L5" secondAttribute="bottom" constant="15" id="uei-Jt-FzU"/>
+                                            <constraint firstItem="hnV-en-sT9" firstAttribute="top" secondItem="SHC-fc-tUY" secondAttribute="bottom" constant="15" id="v4w-AE-Afs"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="2Jo-ch-8oV" secondAttribute="bottom" id="bnd-tN-t1z"/>
+                                    <constraint firstItem="2Jo-ch-8oV" firstAttribute="top" secondItem="CpU-e5-DuW" secondAttribute="top" id="jeo-km-Rfb"/>
+                                    <constraint firstItem="2Jo-ch-8oV" firstAttribute="width" secondItem="CpU-e5-DuW" secondAttribute="width" id="tsA-fr-8Lb"/>
+                                    <constraint firstItem="2Jo-ch-8oV" firstAttribute="leading" secondItem="CpU-e5-DuW" secondAttribute="leading" id="v61-mQ-cjm"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Jo-ch-8oV" secondAttribute="trailing" id="xYg-Tq-n4c"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CpU-e5-DuW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="56Y-xs-T18"/>
+                            <constraint firstAttribute="bottom" secondItem="CpU-e5-DuW" secondAttribute="bottom" id="AbB-ee-jXo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="V1r-7x-fMM" secondAttribute="top" constant="-15" id="PRX-wB-Ifx"/>
+                            <constraint firstItem="CpU-e5-DuW" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="UWr-oS-A7R"/>
+                            <constraint firstItem="CpU-e5-DuW" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="YZm-AF-1yg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63" y="-27"/>
+            <point key="canvasLocation" x="61.832061068702288" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
+        <image name="mock" width="960" height="640"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

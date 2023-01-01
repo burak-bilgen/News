@@ -9,4 +9,17 @@ import Foundation
 
 final class ListViewModel {
     
+    static let shared = ListViewModel()
+    
+    var newsArr = [Post]()
+    
+    func getNews(completionHandler: @escaping ((String?) -> Void)) {
+        NewsManager.shared.getNews { items, errorMessage in
+            if let items {
+                self.newsArr = items
+            }
+            
+            completionHandler(errorMessage)
+        }
+    }
 }
