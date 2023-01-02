@@ -14,7 +14,7 @@ class NetworkManager {
         
         let session = URLSession.shared
         
-        if let address = URL(string: address) {
+        if let address = URL(string: address + "&apiKey=\(apiKey)") {
             var request = URLRequest(url: address)
             request.httpMethod = method.rawValue
             

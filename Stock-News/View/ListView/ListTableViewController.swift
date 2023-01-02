@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 typealias TableView = UITableViewDelegate & UITableViewDataSource
 
@@ -17,13 +18,17 @@ extension ListViewController: TableView {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = listTableView.dequeueReusableCell(withIdentifier: Cell.listCell.rawValue, for: indexPath) as? ListTableViewCell else { return UITableViewCell() }
         
-        cell.textLabel?.text = viewModel.newsArr[indexPath.row].title
+        if let data = viewModel.newsArr.articles?[indexPath.row], let imgURL = data.urlToImage {
+            cell.titleLabel.text = data.title
+            cell.authorLabel.text = data.author
+            cell.newsImageView.sd_setImage(with: URL(string: imgURL))
+        }
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.newsArr.count
+        if let count = viewModel.newsArr.articles?.count { return count } else { return 0 }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

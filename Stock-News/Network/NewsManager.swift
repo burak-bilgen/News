@@ -10,10 +10,10 @@ import Foundation
 class NewsManager {
     static let shared = NewsManager()
     
-    func getNews(completionHandler: @escaping (([Post]?, String?) -> Void)) {
-        let address = "\(NetworkHelper.shared.baseURL)"
+    func getNews(completionHandler: @escaping ((News?, String?) -> Void)) {
+        let address = "\(NetworkHelper.shared.baseURL)/v2/top-headlines?country=tr"
         
-        NetworkManager.shared.request(type: [Post].self,
+        NetworkManager.shared.request(type: News.self,
                                       address: address,
                                       method: .get) { response in
             

@@ -21,5 +21,5 @@ enum ErrorType: String, Error {
 class NetworkHelper {
     static let shared = NetworkHelper()
     
-    let baseURL = "https://api.marketaux.com/v1/"
+    let baseURL = "https://newsapi.org"
 }

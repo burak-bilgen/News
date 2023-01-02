@@ -21,7 +21,9 @@ class ListViewController: UIViewController {
     
     private func requestData() {
         viewModel.getNews { error in
-            assert(error == nil, "BRUH")
+            if let error {
+                print(error)
+            }
             
             DispatchQueue.main.async {
                 self.listTableView.reloadData()

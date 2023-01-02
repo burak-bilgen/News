@@ -11,7 +11,7 @@ final class ListViewModel {
     
     static let shared = ListViewModel()
     
-    var newsArr = [Post]()
+    var newsArr = News()
     
     func getNews(completionHandler: @escaping ((String?) -> Void)) {
         NewsManager.shared.getNews { items, errorMessage in
