@@ -16,4 +16,10 @@ class ListTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+    override func prepareForReuse() {
+        titleLabel.text = ""
+        authorLabel.text = ""
+        newsImageView.image = nil
+    }
 }

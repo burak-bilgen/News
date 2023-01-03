@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D37B3E02964BC0D00A1C23E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8D37B3DF2964BC0D00A1C23E /* Kingfisher */; };
 		8D532211296026F200200420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D532210296026F200200420 /* AppDelegate.swift */; };
 		8D532213296026F200200420 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D532212296026F200200420 /* SceneDelegate.swift */; };
 		8D532215296026F200200420 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D532214296026F200200420 /* ListViewController.swift */; };
@@ -27,7 +28,6 @@
 		8DBB7CB229622BBE0048499D /* NewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB7CB129622BBE0048499D /* NewsManager.swift */; };
 		8DBB7CB429622DAF0048499D /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB7CB329622DAF0048499D /* NewsModel.swift */; };
 		8DBB7CB6296233F80048499D /* PrivateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB7CB5296233F80048499D /* PrivateData.swift */; };
-		8DBB7CB9296369140048499D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8DBB7CB8296369140048499D /* SDWebImage */; };
 		8DBB7CC4296373640048499D /* Outfit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DBB7CBB296373640048499D /* Outfit-Bold.ttf */; };
 		8DBB7CC5296373640048499D /* Outfit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DBB7CBC296373640048499D /* Outfit-Regular.ttf */; };
 		8DBB7CC6296373640048499D /* Outfit-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DBB7CBD296373640048499D /* Outfit-Black.ttf */; };
@@ -113,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DBB7CB9296369140048499D /* SDWebImage in Frameworks */,
+				8D37B3E02964BC0D00A1C23E /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +326,7 @@
 			);
 			name = "Stock-News";
 			packageProductDependencies = (
-				8DBB7CB8296369140048499D /* SDWebImage */,
+				8D37B3DF2964BC0D00A1C23E /* Kingfisher */,
 			);
 			productName = "Stock-News";
 			productReference = 8D53220D296026F200200420 /* Stock-News.app */;
@@ -402,6 +402,7 @@
 			mainGroup = 8D532204296026F200200420;
 			packageReferences = (
 				8DBB7CB7296369140048499D /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				8D37B3DE2964BC0D00A1C23E /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 8D53220E296026F200200420 /* Products */;
 			projectDirPath = "";
@@ -656,7 +657,7 @@
 				DEVELOPMENT_TEAM = 4AGNF4M662;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Stock-News/App/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Stock News";
+				INFOPLIST_KEY_CFBundleDisplayName = News;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = ListView;
@@ -689,7 +690,7 @@
 				DEVELOPMENT_TEAM = 4AGNF4M662;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Stock-News/App/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Stock News";
+				INFOPLIST_KEY_CFBundleDisplayName = News;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = ListView;
@@ -830,6 +831,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8D37B3DE2964BC0D00A1C23E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		8DBB7CB7296369140048499D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -841,10 +850,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8DBB7CB8296369140048499D /* SDWebImage */ = {
+		8D37B3DF2964BC0D00A1C23E /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8DBB7CB7296369140048499D /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
+			package = 8D37B3DE2964BC0D00A1C23E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

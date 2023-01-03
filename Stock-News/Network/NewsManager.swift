@@ -10,13 +10,15 @@ import Foundation
 class NewsManager {
     static let shared = NewsManager()
     
-    func getNews(completionHandler: @escaping ((News?, String?) -> Void)) {
-        let address = "\(NetworkHelper.shared.baseURL)/v2/top-headlines?country=tr"
+    func getNews(with query: NewsType?, completionHandler: @escaping ((News?, String?) -> Void)) {
         
+        var address = "\(NetworkHelper.shared.baseURL)/v2/top-headlines?"
+        
+        if let query { address += "q=\(query.rawValue)" }
+    
         NetworkManager.shared.request(type: News.self,
                                       address: address,
                                       method: .get) { response in
-            
             switch response {
             case .success(let items):
                 completionHandler(items, nil)

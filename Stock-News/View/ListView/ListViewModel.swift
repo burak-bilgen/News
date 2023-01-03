@@ -11,15 +11,33 @@ final class ListViewModel {
     
     static let shared = ListViewModel()
     
-    var newsArr = News()
+    var news = News()
+    var selectedNewsType: NewsType = .business
     
     func getNews(completionHandler: @escaping ((String?) -> Void)) {
-        NewsManager.shared.getNews { items, errorMessage in
+        NewsManager.shared.getNews(with: selectedNewsType) { items, errorMessage in
             if let items {
-                self.newsArr = items
+                self.news = items
             }
             
             completionHandler(errorMessage)
         }
     }
+    
+    func getSegmentTitle(for index: Int?) {
+        switch index {
+        case 0: selectedNewsType = .business
+        case 1: selectedNewsType = .entertainment
+        case 2: selectedNewsType = .tech
+        case 3: selectedNewsType = .sports
+        default: break
+        }
+    }
+}
+
+enum NewsType: String {
+    case business = "Business"
+    case entertainment = "Entertainment"
+    case tech = "Tech"
+    case sports = "Sports"
 }
