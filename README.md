@@ -5,7 +5,7 @@ This iOS app displays the latest news articles from various categories such as b
 # Features
 Four categories of news: business, entertainment, tech, and sports\
 Visit the news source website on the details page\
-Share news articles with friends\
+Share news articles with friends
 
 # Requirements
 API Key from [News API](https://newsapi.org/).\
