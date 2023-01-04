@@ -2,14 +2,16 @@
 
 This iOS app displays the latest news articles from various categories such as business, entertainment, tech, and sports. The app uses the MVVM architecture and a generic network layer to retrieve and display the news articles.
 
-# Features
-Four categories of news: business, entertainment, tech, and sports.\
-Visit the news source website on the details page.\
-Share news articles with friends.
+# Features and Technologies
+🏗️&nbsp;&nbsp;&nbsp;MVVM Architecture\
+📡&nbsp;&nbsp;&nbsp;Generic Network Layer\
+🏞️&nbsp;&nbsp;&nbsp;Kingfisher Library\
+📰&nbsp;&nbsp;&nbsp;Four categories of news: business, entertainment, tech, and sports.\
+🕸️&nbsp;&nbsp;&nbsp;Visit the news source website on the details page.\
+🙋‍♂️&nbsp;&nbsp;&nbsp;Share news articles with friends.
 
 # Visual
-<img src="https://github.com/burak-bilgen/News/blob/main/news.gif" width="300" />
-<img src="https://github.com/burak-bilgen/News/blob/main/detail.gif" width="300" />
+<img src="https://github.com/burak-bilgen/News/blob/main/news.gif" width="325" />   <img src="https://github.com/burak-bilgen/News/blob/main/detail.gif" width="325" />
 
 # Requirements
 API Key from [News API](https://newsapi.org/)\
