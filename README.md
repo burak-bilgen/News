@@ -7,6 +7,10 @@ Four categories of news: business, entertainment, tech, and sports.\
 Visit the news source website on the details page.\
 Share news articles with friends.
 
+# Visual
+![News Page](https://github.com/burak-bilgen/News/blob/main/news.gif)
+![Detail Page](https://github.com/burak-bilgen/News/blob/main/detail.gif)
+
 # Requirements
 API Key from [News API](https://newsapi.org/)\
 iOS 13.0 or later\
