@@ -13,8 +13,8 @@ iOS 13.0 or later\
 Xcode 11 or later
 
 # Installation
-Clone the repository\n
-Open the project in Xcode\n
+Clone the repository\
+Open the project in Xcode\
 Get an API Key from [News API](https://newsapi.org/).\
 Create a constant named "apiKey" and add your API key.\
 Build and run the app
