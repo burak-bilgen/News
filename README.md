@@ -8,8 +8,8 @@ Visit the news source website on the details page.\
 Share news articles with friends.
 
 # Visual
-[News Page]<img src="https://github.com/burak-bilgen/News/blob/main/news.gif" width="250" />
-[Detail Page]<img src="https://github.com/burak-bilgen/News/blob/main/detail.gif" width="250" />
+<img src="https://github.com/burak-bilgen/News/blob/main/news.gif" width="300" />
+<img src="https://github.com/burak-bilgen/News/blob/main/detail.gif" width="300" />
 
 # Requirements
 API Key from [News API](https://newsapi.org/)\
