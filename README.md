@@ -24,4 +24,4 @@ Build and run the app
 [Docs](https://newsapi.org/docs/)
 
 # License
-This project is licensed under the [MIT] license. See the LICENSE file for more information.
+This project is licensed under the MIT license. See the LICENSE file for more information.
