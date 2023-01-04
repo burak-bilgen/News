@@ -16,13 +16,18 @@ enum Cell: String {
 
 extension ListViewController: TableView {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = listTableView.dequeueReusableCell(withIdentifier: Cell.listCell.rawValue, for: indexPath) as? ListTableViewCell, let data = viewModel.news.articles?[indexPath.row], let imgURL = data.urlToImage else { return UITableViewCell() }
+        guard let cell = listTableView.dequeueReusableCell(withIdentifier: Cell.listCell.rawValue, for: indexPath) as? ListTableViewCell else { return UITableViewCell() }
 
-        cell.titleLabel.text = data.title
-        cell.authorLabel.text = data.author ?? "Unknown"
+        if let data = viewModel.news.articles?[indexPath.row], let imgURL = data.urlToImage {
+            cell.titleLabel.text = data.title
+            cell.authorLabel.text = data.author ?? "Unknown"
+            cell.timeLabel.text = data.publishedAt?.formatDate()
 
-        cell.newsImageView.kf.indicatorType = .activity
-        cell.newsImageView.kf.setImage(with: URL(string: imgURL))
+            cell.newsImageView.kf.indicatorType = .activity
+            (cell.newsImageView.kf.indicator?.view as? UIActivityIndicatorView)?.color = .white
+            
+            cell.newsImageView.kf.setImage(with: URL(string: imgURL))
+        }
         
         return cell
     }
@@ -32,7 +37,13 @@ extension ListViewController: TableView {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let detailView = UIStoryboard(name: "DetailView", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return }
         
+        if let article = viewModel.news.articles?[indexPath.row] {
+            detailView.data = article
+        }
+        
+        self.present(detailView, animated: true)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

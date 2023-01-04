@@ -20,7 +20,6 @@
 		8DBB7C6E296046E20048499D /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB7C6D296046E20048499D /* ListViewModel.swift */; };
 		8DBB7C70296047000048499D /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DBB7C6F296047000048499D /* DetailView.storyboard */; };
 		8DBB7C72296047130048499D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB7C71296047130048499D /* DetailViewController.swift */; };
-		8DBB7C742960471B0048499D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB7C732960471B0048499D /* DetailViewModel.swift */; };
 		8DBB7C78296062B10048499D /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB7C77296062B10048499D /* ListTableViewController.swift */; };
 		8DBB7C7A296063F50048499D /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB7C79296063F50048499D /* ListTableViewCell.swift */; };
 		8DBB7CAE296225AD0048499D /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB7CAD296225AD0048499D /* NetworkHelper.swift */; };
@@ -45,6 +44,7 @@
 		8DBB7CDB2963747D0048499D /* Lora-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DBB7CD32963747D0048499D /* Lora-Medium.ttf */; };
 		8DBB7CDC2963747D0048499D /* Lora-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DBB7CD42963747D0048499D /* Lora-BoldItalic.ttf */; };
 		8DBB7CDD2963747D0048499D /* Lora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DBB7CD52963747D0048499D /* Lora-Regular.ttf */; };
+		8DC9B5B92965EF0200773989 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC9B5B82965EF0200773989 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +81,6 @@
 		8DBB7C6D296046E20048499D /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		8DBB7C6F296047000048499D /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
 		8DBB7C71296047130048499D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		8DBB7C732960471B0048499D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		8DBB7C77296062B10048499D /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		8DBB7C79296063F50048499D /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		8DBB7CAD296225AD0048499D /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		8DBB7CD32963747D0048499D /* Lora-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Medium.ttf"; sourceTree = "<group>"; };
 		8DBB7CD42963747D0048499D /* Lora-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-BoldItalic.ttf"; sourceTree = "<group>"; };
 		8DBB7CD52963747D0048499D /* Lora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Regular.ttf"; sourceTree = "<group>"; };
+		8DC9B5B82965EF0200773989 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				8DBB7C6F296047000048499D /* DetailView.storyboard */,
-				8DBB7C732960471B0048499D /* DetailViewModel.swift */,
 				8DBB7C71296047130048499D /* DetailViewController.swift */,
 			);
 			path = DetailView;
@@ -256,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				8DBB7C7F29618CDD0048499D /* Fonts */,
+				8DC9B5B82965EF0200773989 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -471,9 +471,9 @@
 				8DBB7CB229622BBE0048499D /* NewsManager.swift in Sources */,
 				8DBB7CB0296225B50048499D /* NetworkManager.swift in Sources */,
 				8D532215296026F200200420 /* ListViewController.swift in Sources */,
-				8DBB7C742960471B0048499D /* DetailViewModel.swift in Sources */,
 				8DBB7C78296062B10048499D /* ListTableViewController.swift in Sources */,
 				8D532211296026F200200420 /* AppDelegate.swift in Sources */,
+				8DC9B5B92965EF0200773989 /* Extensions.swift in Sources */,
 				8DBB7CB6296233F80048499D /* PrivateData.swift in Sources */,
 				8DBB7C7A296063F50048499D /* ListTableViewCell.swift in Sources */,
 				8DBB7C72296047130048499D /* DetailViewController.swift in Sources */,

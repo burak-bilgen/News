@@ -12,7 +12,7 @@ class NewsManager {
     
     func getNews(with query: NewsType?, completionHandler: @escaping ((News?, String?) -> Void)) {
         
-        var address = "\(NetworkHelper.shared.baseURL)/v2/top-headlines?"
+        var address = "\(NetworkHelper.shared.baseURL)/v2/everything?"
         
         if let query { address += "q=\(query.rawValue)" }
     
