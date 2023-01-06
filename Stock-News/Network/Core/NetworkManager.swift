@@ -41,4 +41,6 @@ class NetworkManager {
             completionHandler(.failure(.invalidData))
         }
     }
+    
+    private init { }
 }
