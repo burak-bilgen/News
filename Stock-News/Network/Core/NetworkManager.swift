@@ -42,5 +42,5 @@ class NetworkManager {
         }
     }
     
-    private init { }
+    private init() { }
 }
